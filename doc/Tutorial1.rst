@@ -86,7 +86,21 @@ that should be somewhere in your :env:``PYTHONPATH` or added in :file:`conf.py`.
 The default location for these is in the :file:``python`` subdirectory under the main installation
 directory. The content of the ``report`` directive is the figure or table caption.
 
-Add a link to the contents section in the :file:`index.rst` and rebuild the sources::
+Copy (or move) the file `Tutorial1.rst` into `pipeline/Tutorial1.rst`. Add a link to the your plot
+in the :file:`pipeline.rst` by appending a line immediately after the following::
+
+   :maxdepth: 2
+   pipeline/PipelineTest.rst
+   trackers/Trackers.rst
+
+to make it look like::
+
+   :maxdepth: 2
+   pipeline/PipelineTest.rst
+   trackers/Trackers.rst
+   pipeline/Tutorial1.rst
+
+and rebuild the sources::
 
     make html
 
