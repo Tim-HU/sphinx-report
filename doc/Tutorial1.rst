@@ -37,7 +37,7 @@ There are three steps involved:
 Adding a data source
 ====================
 
-Create the file :file:`Tutorial1.py` in the :file:`python` subdirectory and add 
+Create the file :file:`Tutorial1.py` in the :file:`tutorial/trackers/` subdirectory and add 
 the following code::
 
    def MyDataFunction():
