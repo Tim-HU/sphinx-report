@@ -86,7 +86,7 @@ that should be somewhere in your :env:``PYTHONPATH` or added in :file:`conf.py`.
 The default location for these is in the :file:``python`` subdirectory under the main installation
 directory. The content of the ``report`` directive is the figure or table caption.
 
-Copy (or move) the file `Tutorial1.rst` into `pipeline/Tutorial1.rst`. Add a link to the your plot
+Copy (or move) the file :file:`Tutorial1.rst` into :file:`pipeline/Tutorial1.rst`. Add a link to the your plot
 in the :file:`pipeline.rst` by appending a line immediately after the following::
 
    :maxdepth: 2
