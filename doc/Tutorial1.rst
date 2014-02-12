@@ -81,13 +81,14 @@ Create the following rst file:`Tutorial1.rst`::
 The :term:`report` directive is used to insert the graph into 
 the restructured text document. Behind the scenes, sphinxreport`sphinx` will call 
 the sphinxreport extension and request a barplot. The sphinxreport in 
-turn will look for a data source :meth:``MyDataFunction`` in the module :file:``Tutorial1.py`` 
-that should be somewhere in your :env:``PYTHONPATH` or added in :file:`conf.py`.
-The default location for these is in the :file:``python`` subdirectory under the main installation
-directory. The content of the ``report`` directive is the figure or table caption.
+turn will look for a data source :meth:`MyDataFunction` in the module :file:`Tutorial1.py` 
+that should be somewhere in your :env:`PYTHONPATH` or added in :file:`conf.py`.
+The default location for these is in the :file:`python` subdirectory under the main installation
+directory. The content of the :term:`report` directive is the figure or table caption.::
 
-Copy (or move) the file :file:`Tutorial1.rst` into :file:`pipeline/Tutorial1.rst`. Add a link to the your plot
-in the :file:`pipeline.rst` by appending a line immediately after the following::
+Copy (or move) the file :file:`Tutorial1.rst` into :file:`pipeline/Tutorial1.rst`. Add a 
+link to the your plot :file:`pipeline/Tutorial1.rst` in the :file:`pipeline.rst` by 
+appending a line immediately after the following::
 
    :maxdepth: 2
    pipeline/PipelineTest.rst
