@@ -37,7 +37,7 @@ There are three steps involved:
 Adding a data source
 ====================
 
-Create the file :file:`Tutorial1.py` in the :file:`tutorial/trackers/` subdirectory and add 
+Create the file :file:`Tutorial1.py` in the :file:`trackers` subdirectory and add 
 the following code::
 
    def MyDataFunction():
@@ -86,20 +86,18 @@ that should be somewhere in your :env:`PYTHONPATH` or added in :file:`conf.py`.
 The default location for these is in the :file:`python` subdirectory under the main installation
 directory. The content of the :term:`report` directive is the figure or table caption.::
 
-Copy (or move) the file :file:`Tutorial1.rst` into :file:`pipeline/Tutorial1.rst`. Add a 
-link to the your plot :file:`pipeline/Tutorial1.rst` in the :file:`pipeline.rst` by 
-appending a line immediately after the following::
+Add a link in the :file:`contents.rst` by appending a line immediately after the following::
 
    :maxdepth: 2
-   pipeline/PipelineTest.rst
-   trackers/Trackers.rst
+   analysis.rst
+   pipeline.rst
 
 to make it look like::
 
    :maxdepth: 2
-   pipeline/PipelineTest.rst
-   trackers/Trackers.rst
-   pipeline/Tutorial1.rst
+   analysis.rst
+   pipeline.rst
+   Tutorial1.rst
 
 and rebuild the sources::
 
